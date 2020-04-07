@@ -1,0 +1,35 @@
+.menu{
+    background-color: rgb(0, 0, 102);
+    /* position: relative; */
+    /* margin-top:100px; */
+    height: 100%;
+    /* padding: 0%; */
+    width: 20%;
+}
+
+.menuOptions{
+    padding-top: 70%;
+}
+
+.menuParts{
+border: white 2px solid;
+height: 100%;
+border-style: ridge;
+}
+
+.bilsportheader{
+    /* float:left; */
+    /* position: static; */
+    color: whitesmoke;
+    font-size: 2vw;
+    padding-top: 0%;
+}
+
+.bilsport{
+    position: absolute;
+    width: 97%;
+    margin-left: 1%;
+    background-color: rgb(0, 0, 102);
+
+    /* display: contents; */
+}

@@ -1,0 +1,125 @@
+.main {
+  background: linear-gradient(to left, #2d2a62, white);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.login{
+    justify-content: center;
+  }
+    
+    .regcontainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;
+    }
+  
+    .form-box {
+      width: 600px;
+      /* height: 700px; */
+      background-color: black;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      opacity: 0.7;
+      border-radius: 2%;
+    }
+  
+    .header-form {
+      margin-bottom: 15px;
+    }
+  
+    button {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .message {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .social {
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+    }
+    
+    .social i {
+      font-size: 35px;
+    }
+    
+    .social i:hover {
+      color: red;
+      cursor: pointer;
+    }
+    
+    .bilkentlogo {
+      width: 500px ;
+      height: 320px;
+      margin-bottom: -80px;
+  }
+  
+  .bilkentsportlogo{
+    position: absolute;
+    z-index: 1;
+    margin-top: -370px;
+  }
+  
+  .bilkentimage{
+    width: 220px;
+  }
+
+  .form-control{
+      font-size: 17px;
+  }
+
+  .regimage{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-right: 100px;
+  }
+  
+  /*
+  .cardlogin {
+      width: 40%;
+      border: 2px solid;
+      padding-bottom: 40%;
+      text-align: center;
+      background-color: white;
+      border-radius:4%;
+      height:10px;
+      margin:auto;
+  }
+  
+  /* .main{
+      width: 100%;
+      padding: 100px;
+  } */
+  
+  /*
+  .login{
+      width: 1000px;
+      height: 1000px;
+      padding: 100px;
+      text-align: center;
+  }
+  
+  .form {
+      margin-top: 50px;
+  }
+  
+  
+  
+  .col-md-8 {
+      /* padding-left: 500px; */
+      
+  
+  
+  

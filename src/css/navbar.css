@@ -1,0 +1,31 @@
+/* 
+.logoutButton{
+    background-color: transparent;
+border:none;
+   margin-right:1%;
+}
+
+@media only screen and (max-width: 800px){
+.occupancy
+{
+    padding-right:3%;
+}
+}
+.navbar {
+     left:15%;
+
+}
+.bg-dark{
+    background-color: rgb(0, 0, 102);
+}
+ */
+
+ .nav1{
+    color:whitesmoke;
+    height: 100%;
+    padding:2.5%;
+    text-align: right;
+    max-width: 100%;
+    /* font-size: ;k */
+    background-color: rgb(0, 0, 102);
+ }
