@@ -97,6 +97,10 @@
     width: 100%;
     background-color: lightgray;
     display: inline-block;
+    /* display: none; */
+    opacity: 0;
+    transition: 250ms all;
+    visibility: hidden;
 }
 
 ul.dropdown{
@@ -142,3 +146,9 @@ ul.menu li:hover ul.dropdown{
     display: block;
 }
 
+ul.menu li:hover .dropdiv{
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+    /* display: block; */
+}

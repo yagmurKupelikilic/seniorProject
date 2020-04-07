@@ -8,7 +8,7 @@ import 'react-awesome-slider/dist/styles.css';
 import axios from "axios";
 import MainLayout from "../layouts/MainLayout";
 import {Link} from "react-router-dom";
-
+import store from 'store';
 
 
 
@@ -37,6 +37,9 @@ export default class HomePage extends Component {
 			.then(response => this.setState({
 				announcements: response.data
 			}))
+
+			console.log(store.get('loggedIn'));
+		
 	}
 
 	onChangeFileHandler(event) {

@@ -86,6 +86,14 @@
     padding-right: 100px;
   }
   
+  #err::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+
+  #normal::placeholder {
+    color: grey;
+  }
   /*
   .cardlogin {
       width: 40%;
