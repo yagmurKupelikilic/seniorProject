@@ -41,7 +41,6 @@ export default class Announcement extends Component {
             bool:true
         });
     }
-
     render() {
         const { announcements } = this.state;
         const href = "/announcements/";

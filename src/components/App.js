@@ -13,6 +13,7 @@ import Login from "./Login";
 import Tournament from "./Tournament";
 import Reservation from "./Reservation";
 import Course from "./Course";
+import AnnouncementForm from "./AnnouncementForm"
 
 
 
@@ -35,6 +36,7 @@ class App extends Component {
                         <Route path="/reservations" component={Reservation}/>
                         <Route path="/announcements" component={Announcement}/>
                         <Route path="/announcements/:id" component={Announcement}/>
+                        <Route path="/announcementForm" component={AnnouncementForm}/>
                         <Route path="/register" exact component={Register} />
                         <Route path="/login" exact component={Login} />
                         <Route path="/homepage" exact component={HomePage} />

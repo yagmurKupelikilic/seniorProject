@@ -48,7 +48,7 @@ class Login extends React.Component {
         } else {
             const { history } = this.props;
             const user = {
-                id: this.state.id,
+                bilkentId: this.state.id,
                 password: this.state.password,
             }
 

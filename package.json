@@ -1,30 +1,30 @@
 {
   "name": "bilsportwebapp",
   "version": "1.0.0",
-  "description": "BilSport Web",
+  "description": "BilSport Web Application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open --mode development",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AliAlperSakar/seniorProject.git"
+    "url": "https://github.com/yagmurKupelikilic/seniorProject.git"
   },
   "keywords": [
     "Bilkent",
     "Sport",
     "Web"
   ],
-  "author": "Ali Alper Sakar",
+  "author": "Yağmur Küpelikılıç",
   "license": "UNLICENSED",
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
-    "react": "^16.12.0",
+    "react": "^16.13.1",
     "react-awesome-slider": "^4.0.2",
-    "react-dom": "^16.12.0",
+    "react-dom": "^16.13.1",
     "react-iframe": "^1.8.0",
     "react-router-dom": "^5.1.2",
     "semantic-ui-react": "^0.88.2",
@@ -36,13 +36,18 @@
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
     "babel": "^6.23.0",
-    "babel-loader": "^8.0.6",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^3.4.2",
     "file-loader": "^5.0.2",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^1.1.3",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
