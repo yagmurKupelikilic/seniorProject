@@ -1,0 +1,26 @@
+.main {
+    background: linear-gradient(to left, #2d2a62, white);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+
+  .regbilkentimage{
+      margin-top: 220px;
+      width: 220px;
+  }
+
+  .regbilkentLogo{
+    width: 500px;
+    height: 250px;
+    margin-bottom: -80px;
+    padding-bottom: 20px;
+  }
+
+#registeredText{
+    font-size: large;
+    padding: 0px 20px 0px 20px;
+}
+

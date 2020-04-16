@@ -5,6 +5,7 @@ import axios from "axios";
 import "../css/announcement.css";
 import { Link } from "react-router-dom";
 import deneme from '../images/fotos/Bbuilding.jpg';
+import store from 'store';
 
 export default class Announcement extends Component {
     constructor(props) {
@@ -22,7 +23,7 @@ export default class Announcement extends Component {
             .then(response => this.setState({
                 announcements: response.data
             }))
-       
+
     }
 
     // componentDidUpdate(prevState){
@@ -32,45 +33,81 @@ export default class Announcement extends Component {
     //                 announcement: response.data
     //             }))
     //         console.log(this.state.announcement);
-            
+
     //     }
     // }
 
-    getAnnouncement(){
+    getAnnouncement() {
         this.setState({
-            bool:true
+            bool: true
         });
     }
+
     render() {
+        const status = store.get("status");
         const { announcements } = this.state;
         const href = "/announcements/";
-        console.log(this.state.announcement);
-        return (
-            <div>
-                <MainLayout />
-                <div className="announcement">
-                    {/* <div className="announce" >
+        console.log(status);
+        if (status == "admin") {
+            return (
+                <div>
+                    <MainLayout />
+                    <div className="announcement">
+                        <p>ADMIN</p>
+                        {/* <div className="announce" >
                         <img className='announcementlogo' src={annoucementlogo} />
                     </div > */}
-                    <div className="announceTable">
-                        {/* <table className='table'>
+                        <div className="announceTable">
+                            {/* <table className='table'>
                             <tbody>
                                 <tr> */}
-                                    {/* <th>Image</th> <th> Content </th> <th > Date </th > </tr > */}
-                                {announcements.map((x, index) =>
-                                    <div className='specialtr' key={index} onClick={console.log("SADAS")} >
-                                        <figure className="figuree"><img src={deneme}/></figure>
-                                        <h3><Link to={href + index}>{x.text}</Link></h3>
-                                        <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. </p>
-                                        </div>
-                                )
-                                } 
-                                {/* </tbody> */}
-                        {/* </table > */}
-                    </div>
+                            {/* <th>Image</th> <th> Content </th> <th > Date </th > </tr > */}
+                            {announcements.map((x, index) =>
+                                <div className='specialtr' key={index} onClick={console.log("SADAS")} >
+                                    <figure className="figuree"><img src={deneme} /></figure>
+                                    <h3><Link to={href + index}>{x.text}</Link></h3>
+                                    <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. </p>
+                                </div>
+                            )
+                            }
+                            {/* </tbody> */}
+                            {/* </table > */}
+                        </div>
 
+                    </div>
                 </div>
-            </div>
-        )
+            )
+        } else {
+
+
+
+            return (
+                <div>
+                    <MainLayout />
+                    <div className="announcement">
+                        {/* <div className="announce" >
+                        <img className='announcementlogo' src={annoucementlogo} />
+                    </div > */}
+                        <div className="announceTable">
+                            {/* <table className='table'>
+                            <tbody>
+                                <tr> */}
+                            {/* <th>Image</th> <th> Content </th> <th > Date </th > </tr > */}
+                            {announcements.map((x, index) =>
+                                <div className='specialtr' key={index} onClick={console.log("SADAS")} >
+                                    <figure className="figuree"><img src={deneme} /></figure>
+                                    <h3><Link to={href + index}>{x.text}</Link></h3>
+                                    <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. </p>
+                                </div>
+                            )
+                            }
+                            {/* </tbody> */}
+                            {/* </table > */}
+                        </div>
+
+                    </div>
+                </div>
+            )
+        }
     }
 }

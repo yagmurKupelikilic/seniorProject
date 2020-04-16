@@ -91,6 +91,11 @@
     opacity: 1; /* Firefox */
   }
 
+  .err{
+    color: red;
+  }
+
+
   #normal::placeholder {
     color: grey;
   }
@@ -128,6 +133,24 @@
   .col-md-8 {
       /* padding-left: 500px; */
       
+div.Dropdown-control{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+  }
+
+  div.Dropdown-placeholder.is-selected{
+    float: left;
+    padding-left: 20px;
+  }
+ 
+  #status{
+    width: 100%;
+    height: 38px;
+    padding-left: 30px;
+    /* border-radius: 5%; */
   
-  
-  
+  }
+
+  #forget{
+    float: right;
+  }

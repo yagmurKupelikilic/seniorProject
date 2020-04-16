@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Amarante");
+/*@import url("https://fonts.googleapis.com/css?family=Amarante");
 
 html,
 body,
@@ -99,7 +99,9 @@ html {
   overflow-y: scroll;
 }
 body {
-  background: #eee url("https://i.imgur.com/eeQeRmk.png"); /* https://subtlepatterns.com/weave/ */
+  background: #eee url("https://i.imgur.com/eeQeRmk.png"); */
+  /* https://subtlepatterns.com/weave/ */
+  /*
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 62.5%;
   line-height: 1;
@@ -188,8 +190,9 @@ h1 {
   margin-bottom: 10px;
   text-align: center;
 }
-
+*/
 /** page structure **/
+/*
 #wrapper {
   display: block;
   width: 850px;
@@ -242,3 +245,4 @@ h1 {
 #keywords tbody tr td.lalign {
   text-align: left;
 }
+

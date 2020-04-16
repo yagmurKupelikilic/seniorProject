@@ -13,30 +13,29 @@ import Login from "./Login";
 import Tournament from "./Tournament";
 import Reservation from "./Reservation";
 import Course from "./Course";
-import AnnouncementForm from "./AnnouncementForm"
-
-
+import Registered from "./Registered";
+import FileUpload from "./FileUpload";
+import '../css/app.css';
 
 
 class App extends Component {
     constructor() {
         super();
     }
-
-
+    
     render() {
         return (
             <Router>
                 <div>
                     <Switch>
-                        <Route path="/" exact component={Login}/>
+                        <Route path="/" exact component={HomePage}/>
+                        <Route path="/registered" component={Registered}/>
                         <Route path="/homepage" component={HomePage}/>
                         <Route path="/courses" component={Course}/>
                         <Route path="/tournaments" component={Tournament}/>
                         <Route path="/reservations" component={Reservation}/>
                         <Route path="/announcements" component={Announcement}/>
                         <Route path="/announcements/:id" component={Announcement}/>
-                        <Route path="/announcementForm" component={AnnouncementForm}/>
                         <Route path="/register" exact component={Register} />
                         <Route path="/login" exact component={Login} />
                         <Route path="/homepage" exact component={HomePage} />
